@@ -1,0 +1,90 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://pbr_models/robot/robot.gltf" type="PackedScene" id=1]
+[ext_resource path="res://pbr_models/gold_skull/gold_skull.gltf" type="PackedScene" id=2]
+[ext_resource path="res://models/test_bed/test_bed.tscn" type="PackedScene" id=3]
+[ext_resource path="res://pbr_models/head/head.gltf" type="PackedScene" id=4]
+[ext_resource path="res://default_env.tres" type="Environment" id=5]
+[ext_resource path="res://tester.gd" type="Script" id=6]
+
+[node name="MaterialTester" type="Spatial"]
+script = ExtResource( 6 )
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = ExtResource( 5 )
+
+[node name="Testers" type="Spatial" parent="."]
+
+[node name="By jvitorsouzadesign" parent="Testers" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -36, 0, 0 )
+
+[node name="gold_skull" parent="Testers/By jvitorsouzadesign" instance=ExtResource( 2 )]
+transform = Transform( 1.86444, 0, 0, 0, 1.86444, 0, 0, 0, 1.86444, 0.0279999, 2.03573, -4.21122 )
+
+[node name="By TooManyDemons" parent="Testers" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 0, 0 )
+
+[node name="robot" parent="Testers/By TooManyDemons" instance=ExtResource( 1 )]
+transform = Transform( 1.13606, 0, 1.13836, 0, 1.60826, 0, -1.13836, 0, 1.13606, 0.208948, 0.6017, -4.01589 )
+
+[node name="By futabablender" parent="Testers" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -24, 0, 0 )
+
+[node name="head" parent="Testers/By futabablender" instance=ExtResource( 4 )]
+transform = Transform( 1.97842, 0, 0, 0, 1.97842, 0, 0, 0, 1.97842, 0.0227222, 2.32029, -4.30736 )
+
+[node name="CameraHolder" type="Spatial" parent="."]
+transform = Transform( 0.877582, 0, -0.479427, 0, 1, 0, 0.479427, 0, 0.877582, -36, 1.81064, -4 )
+
+[node name="RotationX" type="Spatial" parent="CameraHolder"]
+transform = Transform( 1, 0, 0, 0, 0.877582, 0.479427, 0, -0.479427, 0.877582, 0, 0, 0 )
+
+[node name="Camera" type="Camera" parent="CameraHolder/RotationX"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5 )
+fov = 65.0
+near = 0.1
+
+[node name="UI" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+
+[node name="Background" type="OptionButton" parent="UI"]
+margin_left = 15.0
+margin_top = 6.0
+margin_right = 109.0
+margin_bottom = 26.0
+
+[node name="Previous" type="Button" parent="UI"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 30.0
+margin_top = -50.0
+margin_right = 97.0
+margin_bottom = -30.0
+text = "Previous"
+
+[node name="Next" type="Button" parent="UI"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -72.0
+margin_top = -50.0
+margin_right = -30.0
+margin_bottom = -30.0
+text = "Next"
+
+[node name="MaterialName" type="Label" parent="UI"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_top = -44.0
+margin_bottom = -30.0
+size_flags_vertical = 0
+align = 1
+
+[connection signal="item_selected" from="UI/Background" to="." method="_on_bg_item_selected"]
+[connection signal="pressed" from="UI/Previous" to="." method="_on_Previous_pressed"]
+[connection signal="pressed" from="UI/Next" to="." method="_on_Next_pressed"]
