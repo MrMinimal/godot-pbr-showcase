@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://default_env.tres" type="Environment" id=1]
 [ext_resource path="res://models/test_bed/test_bed.tscn" type="PackedScene" id=2]
@@ -12,6 +12,8 @@
 [ext_resource path="res://pbr_models/crate/crate.tscn" type="PackedScene" id=10]
 [ext_resource path="res://pbr_models/corridor_wall/corridor_wall.tscn" type="PackedScene" id=11]
 [ext_resource path="res://rotating_light.gd" type="Script" id=12]
+[ext_resource path="res://flicker_light.gd" type="Script" id=13]
+[ext_resource path="res://pbr_models/gold_skull/gold_skull.tscn" type="PackedScene" id=14]
 
 [sub_resource type="GIProbeData" id=1]
 bounds = AABB( -20.6592, -5.41299, -45.1158, 41.3184, 10.826, 90.2317 )
@@ -72,7 +74,7 @@ data = SubResource( 1 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.74437, -3.9733, 16.7859 )
 
 [node name="Spatial" type="Spatial" parent="GIProbe/Ship"]
-transform = Transform( 0.231387, 0, 0.965315, 0, 1, 0, -0.965315, 0, 0.231387, -0.0462875, 7.01513, -1.31792 )
+transform = Transform( 0.199061, 0, 0.971506, 0, 1, 0, -0.971506, 0, 0.199061, -0.0462875, 7.01513, -1.31792 )
 script = ExtResource( 12 )
 
 [node name="SpotLight" type="SpotLight" parent="GIProbe/Ship/Spatial"]
@@ -143,11 +145,12 @@ transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 29.0525
 [node name="SpotLight" type="SpotLight" parent="GIProbe/Ship"]
 transform = Transform( 0.634601, 0.288126, 0.717123, 0.0969523, 0.890895, -0.443741, -0.766735, 0.351125, 0.537428, 11.8697, 0.813393, -26.7205 )
 light_color = Color( 0.639216, 0.823529, 0.984314, 1 )
-light_energy = 2.62
+light_energy = 1.39412
 light_indirect_energy = 0.97
 shadow_enabled = true
 spot_range = 25.9822
 spot_angle = 35.9
+script = ExtResource( 13 )
 
 [node name="SpotLight2" type="SpotLight" parent="GIProbe/Ship"]
 transform = Transform( -0.670165, -0.239673, -0.70245, -0.0792695, 0.964127, -0.25333, 0.737967, -0.11409, -0.665123, 20.4356, 1.01167, -34.5243 )
@@ -163,6 +166,9 @@ transform = Transform( 0.593321, 0, 0.804966, 0, 1, 0, -0.804966, 0, 0.593321, -
 
 [node name="crate2" parent="." instance=ExtResource( 10 )]
 transform = Transform( 0.407916, 0, -0.913019, 0, 1, 0, 0.913019, 0, 0.407916, 3.3616, 0.665203, -11.6664 )
+
+[node name="crate11" parent="." instance=ExtResource( 10 )]
+transform = Transform( 0.999828, 0, 0.0185344, 0, 1, 0, -0.0185344, 0, 0.999828, 0.174332, 0.650794, 1.68828 )
 
 [node name="crate3" parent="." instance=ExtResource( 10 )]
 transform = Transform( -0.187758, 0, -0.982215, 0, 1, 0, 0.982215, 0, -0.187758, 3.49492, 2.04978, -11.4906 )
@@ -262,6 +268,9 @@ visible = false
 
 [node name="undercape_tubes_copy_low012" parent="head4" index="12"]
 transform = Transform( 0.0999987, -5.82077e-10, 0, -1.62981e-09, 0.0999987, 0, 1.86265e-09, -1.86265e-09, 0.0999987, -0.872252, -0.382567, 7.62939e-06 )
+
+[node name="gold_skull" parent="." instance=ExtResource( 14 )]
+transform = Transform( -0.787178, 0, 0.22416, 0, 0.818473, 0, -0.22416, 0, -0.787178, 0.0842277, 1.88349, 1.76545 )
 
 [editable path="head"]
 [editable path="head2"]

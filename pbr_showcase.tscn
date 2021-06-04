@@ -88,3 +88,5 @@ align = 1
 [connection signal="item_selected" from="UI/Background" to="." method="_on_bg_item_selected"]
 [connection signal="pressed" from="UI/Previous" to="." method="_on_Previous_pressed"]
 [connection signal="pressed" from="UI/Next" to="." method="_on_Next_pressed"]
+
+[editable path="Testers/By TooManyDemons/robot"]
