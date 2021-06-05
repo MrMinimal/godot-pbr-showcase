@@ -8,9 +8,9 @@ Renderer: GLES 3
 
 ## Screenshots
 
-![Screenshot](screenshots/robot_in_hallway.png)
+![Screenshot](screenshots/gi.GIF)
 
-![Screenshot](screenshots/gi.png)
+![Screenshot](screenshots/robot_in_hallway.png)
 
 ![Screenshot](screenshots/skull.PNG)
 
