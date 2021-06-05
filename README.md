@@ -8,6 +8,10 @@ Renderer: GLES 3
 
 ## Screenshots
 
+![Screenshot](screenshots/robot_in_hallway.png)
+
+![Screenshot](screenshots/gi.png)
+
 ![Screenshot](screenshots/skull.PNG)
 
 ![Screenshot](screenshots/robot.PNG)
@@ -22,3 +26,4 @@ Renderer: GLES 3
 | Golden Skull | [jvitorsouzadesign](https://sketchfab.com/3d-models/skull-salazar-downloadable-eeed09437afb4e1ea8a6ff3b0e9964ad) | CC BY 4.0  |
 | Robot | [TooManyDemons](https://sketchfab.com/3d-models/dreadroamer-b5de35069fd94e6eaf2309a38e6c6a8e) | CC BY 4.0 |
 | Skull Trophy | [futaba@blender](https://sketchfab.com/3d-models/skull-trophy-926e3e235de341569f6dcedcded12b90) | CC BY 4.0 |
+| Interior | [morepolys](https://sketchfab.com/3d-models/facility-beta-9d-assets-af82b47372064fda844baec238f68d7b) | CC BY 4.0 |
