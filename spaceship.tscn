@@ -85,7 +85,7 @@ data = SubResource( 2 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.74437, -3.9733, 16.7859 )
 
 [node name="Spatial" type="Spatial" parent="GIProbe/Ship"]
-transform = Transform( -0.184248, 0, 0.970035, 0, 1, 0, -0.970035, 0, -0.184248, -0.0462875, 7.01513, -1.31792 )
+transform = Transform( -0.95235, 0, 0.260193, 0, 1, 0, -0.260193, 0, -0.95235, -0.0462875, 7.01513, -1.31792 )
 script = ExtResource( 12 )
 
 [node name="SpotLight" type="SpotLight" parent="GIProbe/Ship/Spatial"]
@@ -168,7 +168,7 @@ transform = Transform( -1, 0, 1.50996e-07, 0, 1, 0, -1.50996e-07, 0, -1, 21.4024
 [node name="SpotLight" type="SpotLight" parent="GIProbe/Ship"]
 transform = Transform( 0.634601, 0.288126, 0.717123, 0.0969523, 0.890895, -0.443741, -0.766735, 0.351125, 0.537428, 11.8697, 0.813393, -26.7205 )
 light_color = Color( 0.639216, 0.823529, 0.984314, 1 )
-light_energy = 1.75572
+light_energy = 0.60962
 light_indirect_energy = 0.97
 shadow_enabled = true
 spot_range = 25.9822
@@ -178,7 +178,7 @@ script = ExtResource( 13 )
 [node name="SpotLight3" type="SpotLight" parent="GIProbe/Ship"]
 transform = Transform( 0.286482, -0.451952, -0.844788, 0.0969523, 0.890895, -0.443741, 0.953167, 0.0452197, 0.299044, 1.79055, 0.813393, -27.9403 )
 light_color = Color( 0.639216, 0.823529, 0.984314, 1 )
-light_energy = 1.10873
+light_energy = 1.65751
 light_indirect_energy = 0.97
 shadow_enabled = true
 spot_range = 25.9822
