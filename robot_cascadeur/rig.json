@@ -1,0 +1,962 @@
+{
+	"Version": "0.1.0",
+	"MirrorPlane": "YZ",
+	"FullCenterOfMass": true,
+	"Units": [
+		{
+			"MainJoint": "spine.001",
+			"MainJointPath": [],
+			"JointLocalData": {
+				"Position": {
+					"x": 0.000000,
+					"y": 0.000000,
+					"z": 1.102482
+				},
+				"Rotation": {
+					"x": 1.570796,
+					"y": 0.000000,
+					"z": 0.000000
+				},
+				"Scale": {
+					"x": 1.000000,
+					"y": 1.000000,
+					"z": 1.000000
+				}
+			},
+			"BoxPosition": {
+				"x": 0.000001,
+				"y": 10.917282,
+				"z": -0.000000
+			},
+			"BoxScale": {
+				"x": 8.187962,
+				"y": 21.834564,
+				"z": 8.187962
+			},
+			"DirectionControllerEnabled": false,
+			"MainDirection": {
+				"OtherUnitMain": "spine.002",
+				"OtherUnitMainPath": [
+					"spine.001"
+				]
+			},
+			"AdditionalDirection": {
+				"LocalPosition": {
+					"x": -0.000002,
+					"y": -0.000002,
+					"z": 10.000000
+				}
+			},
+			"Mass": 1.000000,
+			"Width": 3.000000,
+			"AdditionalChildrenJoints": [
+				"thigh.R",
+				"thigh.L"
+			],
+			"AdditionalChildrenJointsPath": [
+				{
+					"Name": "thigh.R",
+					"Path": [
+						"spine.001"
+					]
+				},
+				{
+					"Name": "thigh.L",
+					"Path": [
+						"spine.001"
+					]
+				}
+			],
+			"AdditionalNodeControllers": [],
+			"Collision": {
+				"Active": true,
+				"Radius": 0.000000
+			}
+		},
+		{
+			"MainJoint": "spine.002",
+			"MainJointPath": [
+				"spine.001"
+			],
+			"JointLocalData": {
+				"Position": {
+					"x": -0.000000,
+					"y": 0.218346,
+					"z": 0.000000
+				},
+				"Rotation": {
+					"x": 0.232040,
+					"y": -0.000000,
+					"z": 0.000000
+				},
+				"Scale": {
+					"x": 1.000000,
+					"y": 1.000000,
+					"z": 1.000000
+				}
+			},
+			"Parent": {
+				"Name": "spine.001",
+				"NamePath": [],
+				"Type": "Ball"
+			},
+			"BoxPosition": {
+				"x": 0.000001,
+				"y": 12.468860,
+				"z": -0.000021
+			},
+			"BoxScale": {
+				"x": 9.351645,
+				"y": 24.937719,
+				"z": 9.351645
+			},
+			"DirectionControllerEnabled": false,
+			"MainDirection": {
+				"OtherUnitMain": "spine.003",
+				"OtherUnitMainPath": [
+					"spine.001",
+					"spine.002"
+				]
+			},
+			"AdditionalDirection": {
+				"LocalPosition": {
+					"x": -0.000001,
+					"y": 2.299635,
+					"z": 9.731993
+				}
+			},
+			"Mass": 1.000000,
+			"Width": 3.000000,
+			"AdditionalChildrenJoints": [],
+			"AdditionalChildrenJointsPath": [],
+			"AdditionalNodeControllers": [],
+			"Collision": {
+				"Active": true,
+				"Radius": 0.000000
+			}
+		},
+		{
+			"MainJoint": "spine.003",
+			"MainJointPath": [
+				"spine.001",
+				"spine.002"
+			],
+			"JointLocalData": {
+				"Position": {
+					"x": -0.000000,
+					"y": 0.249377,
+					"z": -0.000000
+				},
+				"Rotation": {
+					"x": 0.536654,
+					"y": 0.000000,
+					"z": 0.000001
+				},
+				"Scale": {
+					"x": 1.000000,
+					"y": 1.000000,
+					"z": 1.000000
+				}
+			},
+			"Parent": {
+				"Name": "spine.002",
+				"NamePath": [
+					"spine.001"
+				],
+				"Type": "Ball"
+			},
+			"BoxPosition": {
+				"x": -0.000002,
+				"y": 18.294872,
+				"z": 13.756733
+			},
+			"BoxScale": {
+				"x": 17.167465,
+				"y": 45.779907,
+				"z": 17.167465
+			},
+			"DirectionControllerEnabled": false,
+			"MainDirection": {
+				"OtherUnitMain": "head",
+				"OtherUnitMainPath": [
+					"spine.001",
+					"spine.002",
+					"spine.003"
+				]
+			},
+			"AdditionalDirection": {
+				"LocalPosition": {
+					"x": -0.000002,
+					"y": 6.951971,
+					"z": 7.188192
+				}
+			},
+			"Mass": 1.000000,
+			"Width": 1.500000,
+			"AdditionalChildrenJoints": [
+				"arm.R",
+				"arm.L"
+			],
+			"AdditionalChildrenJointsPath": [
+				{
+					"Name": "arm.R",
+					"Path": [
+						"spine.001",
+						"spine.002",
+						"spine.003"
+					]
+				},
+				{
+					"Name": "arm.L",
+					"Path": [
+						"spine.001",
+						"spine.002",
+						"spine.003"
+					]
+				}
+			],
+			"AdditionalNodeControllers": [],
+			"Collision": {
+				"Active": true,
+				"Radius": 0.000000
+			}
+		},
+		{
+			"MainJoint": "head",
+			"MainJointPath": [
+				"spine.001",
+				"spine.002",
+				"spine.003"
+			],
+			"JointLocalData": {
+				"Position": {
+					"x": -0.000000,
+					"y": 0.365897,
+					"z": 0.275135
+				},
+				"Rotation": {
+					"x": -1.570796,
+					"y": -2.809451,
+					"z": 1.570795
+				},
+				"Scale": {
+					"x": 1.000000,
+					"y": 1.000000,
+					"z": 1.000000
+				}
+			},
+			"Parent": {
+				"Name": "spine.003",
+				"NamePath": [
+					"spine.001",
+					"spine.002"
+				],
+				"Type": "Ball"
+			},
+			"BoxPosition": {
+				"x": -0.000010,
+				"y": 4.773571,
+				"z": 0.000007
+			},
+			"BoxScale": {
+				"x": 3.580180,
+				"y": 9.547147,
+				"z": 3.580180
+			},
+			"DirectionControllerEnabled": false,
+			"MainDirection": {
+				"LocalPosition": {
+					"x": -0.000021,
+					"y": 9.547144,
+					"z": 0.000013
+				}
+			},
+			"AdditionalDirection": {
+				"LocalPosition": {
+					"x": -4.228174,
+					"y": 9.062147,
+					"z": 0.000010
+				}
+			},
+			"Mass": 1.000000,
+			"Width": 5.000000,
+			"AdditionalChildrenJoints": [],
+			"AdditionalChildrenJointsPath": [],
+			"AdditionalNodeControllers": [],
+			"Collision": {
+				"Active": true,
+				"Radius": 0.000000
+			}
+		},
+		{
+			"MainJoint": "arm.R",
+			"MainJointPath": [
+				"spine.001",
+				"spine.002",
+				"spine.003"
+			],
+			"JointLocalData": {
+				"Position": {
+					"x": -0.256554,
+					"y": 0.189410,
+					"z": -0.011719
+				},
+				"Rotation": {
+					"x": -0.667098,
+					"y": 0.705255,
+					"z": 2.072695
+				},
+				"Scale": {
+					"x": 1.000000,
+					"y": 1.000000,
+					"z": 1.000000
+				}
+			},
+			"Parent": {
+				"Name": "spine.003",
+				"NamePath": [
+					"spine.001",
+					"spine.002"
+				],
+				"Type": "Ball"
+			},
+			"BoxPosition": {
+				"x": 0.000008,
+				"y": 20.354160,
+				"z": 0.000014
+			},
+			"BoxScale": {
+				"x": 15.265617,
+				"y": 40.708313,
+				"z": 15.265617
+			},
+			"DirectionControllerEnabled": false,
+			"MainDirection": {
+				"LocalPosition": {
+					"x": 0.000000,
+					"y": 40.708324,
+					"z": 0.000034
+				}
+			},
+			"AdditionalDirection": {
+				"LocalPosition": {
+					"x": -0.018890,
+					"y": -8.458308,
+					"z": 5.334481
+				}
+			},
+			"Mass": 1.000000,
+			"Width": 0.800000,
+			"AdditionalChildrenJoints": [],
+			"AdditionalChildrenJointsPath": [],
+			"AdditionalNodeControllers": [],
+			"Collision": {
+				"Active": true,
+				"Radius": 0.000000
+			}
+		},
+		{
+			"MainJoint": "arm.L",
+			"MainJointPath": [
+				"spine.001",
+				"spine.002",
+				"spine.003"
+			],
+			"JointLocalData": {
+				"Position": {
+					"x": 0.256555,
+					"y": 0.189410,
+					"z": -0.011719
+				},
+				"Rotation": {
+					"x": 2.474495,
+					"y": -2.436337,
+					"z": 1.068897
+				},
+				"Scale": {
+					"x": 1.000000,
+					"y": 1.000000,
+					"z": 1.000000
+				}
+			},
+			"Parent": {
+				"Name": "spine.003",
+				"NamePath": [
+					"spine.001",
+					"spine.002"
+				],
+				"Type": "Ball"
+			},
+			"BoxPosition": {
+				"x": 0.000051,
+				"y": 20.354162,
+				"z": 0.000030
+			},
+			"BoxScale": {
+				"x": 15.265620,
+				"y": 40.708321,
+				"z": 15.265620
+			},
+			"DirectionControllerEnabled": false,
+			"MainDirection": {
+				"LocalPosition": {
+					"x": 0.000103,
+					"y": 40.708324,
+					"z": 0.000063
+				}
+			},
+			"AdditionalDirection": {
+				"LocalPosition": {
+					"x": 0.018892,
+					"y": -8.458309,
+					"z": 5.334478
+				}
+			},
+			"Mass": 1.000000,
+			"Width": 0.800000,
+			"AdditionalChildrenJoints": [],
+			"AdditionalChildrenJointsPath": [],
+			"AdditionalNodeControllers": [],
+			"Collision": {
+				"Active": true,
+				"Radius": 0.000000
+			}
+		},
+		{
+			"MainJoint": "thigh.R",
+			"MainJointPath": [
+				"spine.001"
+			],
+			"JointLocalData": {
+				"Position": {
+					"x": -0.109373,
+					"y": -0.078845,
+					"z": 0.051479
+				},
+				"Rotation": {
+					"x": 0.336706,
+					"y": 0.303204,
+					"z": 2.542323
+				},
+				"Scale": {
+					"x": 1.000000,
+					"y": 1.000000,
+					"z": 1.000000
+				}
+			},
+			"Parent": {
+				"Name": "spine.001",
+				"NamePath": [],
+				"Type": "Ball"
+			},
+			"BoxPosition": {
+				"x": 0.000013,
+				"y": 24.427414,
+				"z": 0.000055
+			},
+			"BoxScale": {
+				"x": 18.320559,
+				"y": 48.854824,
+				"z": 18.320559
+			},
+			"DirectionControllerEnabled": false,
+			"MainDirection": {
+				"OtherUnitMain": "shin.R",
+				"OtherUnitMainPath": [
+					"spine.001",
+					"thigh.R"
+				]
+			},
+			"AdditionalDirection": {
+				"OtherUnitAdditional": "shin.R",
+				"OtherUnitAdditionalPath": [
+					"spine.001",
+					"thigh.R"
+				]
+			},
+			"Mass": 1.000000,
+			"Width": 1.200000,
+			"AdditionalChildrenJoints": [],
+			"AdditionalChildrenJointsPath": [],
+			"AdditionalNodeControllers": [],
+			"Collision": {
+				"Active": true,
+				"Radius": 0.000000
+			}
+		},
+		{
+			"MainJoint": "thigh.L",
+			"MainJointPath": [
+				"spine.001"
+			],
+			"JointLocalData": {
+				"Position": {
+					"x": 0.109373,
+					"y": -0.078845,
+					"z": 0.051479
+				},
+				"Rotation": {
+					"x": -2.804886,
+					"y": -2.838389,
+					"z": 0.599269
+				},
+				"Scale": {
+					"x": 1.000000,
+					"y": 1.000000,
+					"z": 1.000000
+				}
+			},
+			"Parent": {
+				"Name": "spine.001",
+				"NamePath": [],
+				"Type": "Ball"
+			},
+			"BoxPosition": {
+				"x": 0.000002,
+				"y": 24.427425,
+				"z": 0.000052
+			},
+			"BoxScale": {
+				"x": 18.320570,
+				"y": 48.854855,
+				"z": 18.320570
+			},
+			"DirectionControllerEnabled": false,
+			"MainDirection": {
+				"OtherUnitMain": "shin.L",
+				"OtherUnitMainPath": [
+					"spine.001",
+					"thigh.L"
+				]
+			},
+			"AdditionalDirection": {
+				"OtherUnitAdditional": "shin.L",
+				"OtherUnitAdditionalPath": [
+					"spine.001",
+					"thigh.L"
+				]
+			},
+			"Mass": 1.000000,
+			"Width": 1.200000,
+			"AdditionalChildrenJoints": [],
+			"AdditionalChildrenJointsPath": [],
+			"AdditionalNodeControllers": [],
+			"Collision": {
+				"Active": true,
+				"Radius": 0.000000
+			}
+		},
+		{
+			"MainJoint": "shin.R",
+			"MainJointPath": [
+				"spine.001",
+				"thigh.R"
+			],
+			"JointLocalData": {
+				"Position": {
+					"x": 0.000000,
+					"y": 0.488548,
+					"z": 0.000001
+				},
+				"Rotation": {
+					"x": 2.070222,
+					"y": 3.117547,
+					"z": 3.132611
+				},
+				"Scale": {
+					"x": 1.000000,
+					"y": 1.000000,
+					"z": 1.000000
+				}
+			},
+			"Parent": {
+				"Name": "thigh.R",
+				"NamePath": [
+					"spine.001"
+				],
+				"Type": "Hinge"
+			},
+			"BoxPosition": {
+				"x": -0.000019,
+				"y": 20.259008,
+				"z": 0.000028
+			},
+			"BoxScale": {
+				"x": 15.194260,
+				"y": 40.518024,
+				"z": 15.194260
+			},
+			"DirectionControllerLength": 100.000000,
+			"DirectionControllerIsRight": false,
+			"MainDirection": {
+				"OtherUnitMain": "foot.R",
+				"OtherUnitMainPath": [
+					"spine.001",
+					"thigh.R",
+					"shin.R"
+				]
+			},
+			"AdditionalDirection": {
+				"LocalPosition": {
+					"x": -9.999474,
+					"y": -0.000004,
+					"z": -0.102293
+				}
+			},
+			"Mass": 1.000000,
+			"Width": 1.300000,
+			"AdditionalChildrenJoints": [],
+			"AdditionalChildrenJointsPath": [],
+			"AdditionalNodeControllers": [],
+			"Collision": {
+				"Active": true,
+				"Radius": 0.000000
+			}
+		},
+		{
+			"MainJoint": "shin.L",
+			"MainJointPath": [
+				"spine.001",
+				"thigh.L"
+			],
+			"JointLocalData": {
+				"Position": {
+					"x": 0.000000,
+					"y": 0.488549,
+					"z": 0.000001
+				},
+				"Rotation": {
+					"x": -1.071371,
+					"y": -0.024045,
+					"z": 0.008982
+				},
+				"Scale": {
+					"x": 1.000000,
+					"y": 1.000000,
+					"z": 1.000000
+				}
+			},
+			"Parent": {
+				"Name": "thigh.L",
+				"NamePath": [
+					"spine.001"
+				],
+				"Type": "Hinge"
+			},
+			"BoxPosition": {
+				"x": 0.000029,
+				"y": 20.259018,
+				"z": 0.000018
+			},
+			"BoxScale": {
+				"x": 15.194261,
+				"y": 40.518028,
+				"z": 15.194261
+			},
+			"DirectionControllerLength": 100.000000,
+			"DirectionControllerIsRight": true,
+			"MainDirection": {
+				"OtherUnitMain": "foot.L",
+				"OtherUnitMainPath": [
+					"spine.001",
+					"thigh.L",
+					"shin.L"
+				]
+			},
+			"AdditionalDirection": {
+				"LocalPosition": {
+					"x": 9.999474,
+					"y": -0.000015,
+					"z": -0.102285
+				}
+			},
+			"Mass": 1.000000,
+			"Width": 1.300000,
+			"AdditionalChildrenJoints": [],
+			"AdditionalChildrenJointsPath": [],
+			"AdditionalNodeControllers": [],
+			"Collision": {
+				"Active": true,
+				"Radius": 0.000000
+			}
+		},
+		{
+			"MainJoint": "foot.R",
+			"MainJointPath": [
+				"spine.001",
+				"thigh.R",
+				"shin.R"
+			],
+			"JointLocalData": {
+				"Position": {
+					"x": -0.000000,
+					"y": 0.405180,
+					"z": 0.000001
+				},
+				"Rotation": {
+					"x": -2.053801,
+					"y": -3.048041,
+					"z": 3.045318
+				},
+				"Scale": {
+					"x": 1.000000,
+					"y": 1.000000,
+					"z": 1.000000
+				}
+			},
+			"Parent": {
+				"Name": "shin.R",
+				"NamePath": [
+					"spine.001",
+					"thigh.R"
+				],
+				"Type": "Ball"
+			},
+			"BoxPosition": {
+				"x": -0.000027,
+				"y": 21.457994,
+				"z": 0.000026
+			},
+			"BoxScale": {
+				"x": 16.093496,
+				"y": 42.915989,
+				"z": 16.093496
+			},
+			"DirectionControllerEnabled": false,
+			"MainDirection": {
+				"LocalPosition": {
+					"x": -0.000053,
+					"y": 42.915989,
+					"z": 0.000051
+				}
+			},
+			"AdditionalDirection": {
+				"LocalPosition": {
+					"x": -1.937470,
+					"y": 3.330163,
+					"z": 9.228013
+				}
+			},
+			"Mass": 1.000000,
+			"Width": 0.800000,
+			"AdditionalChildrenJoints": [],
+			"AdditionalChildrenJointsPath": [],
+			"AdditionalNodeControllers": [],
+			"Collision": {
+				"Active": true,
+				"Radius": 0.000000
+			}
+		},
+		{
+			"MainJoint": "foot.L",
+			"MainJointPath": [
+				"spine.001",
+				"thigh.L",
+				"shin.L"
+			],
+			"JointLocalData": {
+				"Position": {
+					"x": 0.000001,
+					"y": 0.405180,
+					"z": 0.000000
+				},
+				"Rotation": {
+					"x": 1.087791,
+					"y": 0.093552,
+					"z": 0.096275
+				},
+				"Scale": {
+					"x": 1.000000,
+					"y": 1.000000,
+					"z": 1.000000
+				}
+			},
+			"Parent": {
+				"Name": "shin.L",
+				"NamePath": [
+					"spine.001",
+					"thigh.L"
+				],
+				"Type": "Ball"
+			},
+			"BoxPosition": {
+				"x": -0.000027,
+				"y": 21.458006,
+				"z": 0.000045
+			},
+			"BoxScale": {
+				"x": 16.093504,
+				"y": 42.916012,
+				"z": 16.093504
+			},
+			"DirectionControllerEnabled": false,
+			"MainDirection": {
+				"LocalPosition": {
+					"x": -0.000050,
+					"y": 42.916016,
+					"z": 0.000090
+				}
+			},
+			"AdditionalDirection": {
+				"LocalPosition": {
+					"x": 1.937458,
+					"y": 3.330161,
+					"z": 9.228017
+				}
+			},
+			"Mass": 1.000000,
+			"Width": 0.800000,
+			"AdditionalChildrenJoints": [],
+			"AdditionalChildrenJointsPath": [],
+			"AdditionalNodeControllers": [],
+			"Collision": {
+				"Active": true,
+				"Radius": 0.000000
+			}
+		}
+	],
+	"CMs": [],
+	"CompositeCMs": [],
+	"JointsLocalData": [
+		{
+			"JointPathName": {
+				"Name": "foot.L_end",
+				"Path": [
+					"spine.001",
+					"thigh.L",
+					"shin.L",
+					"foot.L"
+				]
+			},
+			"LocalData": {
+				"Position": {
+					"x": -0.000000,
+					"y": 0.429160,
+					"z": 0.000001
+				},
+				"Rotation": {
+					"x": 0.000000,
+					"y": 0.000001,
+					"z": 0.000000
+				},
+				"Scale": {
+					"x": 1.000000,
+					"y": 1.000000,
+					"z": 1.000000
+				}
+			}
+		},
+		{
+			"JointPathName": {
+				"Name": "arm.L_end",
+				"Path": [
+					"spine.001",
+					"spine.002",
+					"spine.003",
+					"arm.L"
+				]
+			},
+			"LocalData": {
+				"Position": {
+					"x": 0.000001,
+					"y": 0.407083,
+					"z": 0.000001
+				},
+				"Rotation": {
+					"x": 0.000000,
+					"y": -0.000001,
+					"z": 0.000001
+				},
+				"Scale": {
+					"x": 1.000000,
+					"y": 1.000000,
+					"z": 1.000000
+				}
+			}
+		},
+		{
+			"JointPathName": {
+				"Name": "arm.R_end",
+				"Path": [
+					"spine.001",
+					"spine.002",
+					"spine.003",
+					"arm.R"
+				]
+			},
+			"LocalData": {
+				"Position": {
+					"x": 0.000000,
+					"y": 0.407083,
+					"z": 0.000000
+				},
+				"Rotation": {
+					"x": -0.000000,
+					"y": 0.000000,
+					"z": 0.000000
+				},
+				"Scale": {
+					"x": 1.000000,
+					"y": 1.000000,
+					"z": 1.000000
+				}
+			}
+		},
+		{
+			"JointPathName": {
+				"Name": "head_end",
+				"Path": [
+					"spine.001",
+					"spine.002",
+					"spine.003",
+					"head"
+				]
+			},
+			"LocalData": {
+				"Position": {
+					"x": -0.000000,
+					"y": 0.095472,
+					"z": 0.000000
+				},
+				"Rotation": {
+					"x": 0.000000,
+					"y": 0.000000,
+					"z": 0.000000
+				},
+				"Scale": {
+					"x": 1.000000,
+					"y": 1.000000,
+					"z": 1.000000
+				}
+			}
+		},
+		{
+			"JointPathName": {
+				"Name": "foot.R_end",
+				"Path": [
+					"spine.001",
+					"thigh.R",
+					"shin.R",
+					"foot.R"
+				]
+			},
+			"LocalData": {
+				"Position": {
+					"x": -0.000001,
+					"y": 0.429160,
+					"z": 0.000001
+				},
+				"Rotation": {
+					"x": -0.000000,
+					"y": 0.000000,
+					"z": 0.000000
+				},
+				"Scale": {
+					"x": 1.000000,
+					"y": 1.000000,
+					"z": 1.000000
+				}
+			}
+		}
+	]
+}
