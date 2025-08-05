@@ -1,5 +1,3 @@
-[![Donate](https://img.shields.io/static/v1?label=enjoying%20the%20project?%20&style=for-the-badge&message=DONATE&logo=paypal&labelColor=darkorange&color=blue)](https://www.paypal.com/paypalme/tomlangwaldt)
-
 # PBR Showcase
 
 Shows Godot's physically based rendering capabilites.
